@@ -6,7 +6,7 @@ function updateObjectWithKeyAndValue(object, key, value){
   
 }
 
-function deleteFromObjectbyKey(object, key, value){
+function deleteFromObjectbyKey(object, key){
   var newRecipe2 = Object.assign({}, recipes);
   delete newRecipe2.prop;
   return newRecipe2;
