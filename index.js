@@ -17,6 +17,11 @@ function deleteFromObjectByKey (object, key){
   delete newRecipes[key];
   return newRecipes;
 }
+
+function destructivelyDeleteFromObjectByKey(object, key){
+  delete recipes.key;
+  return recipes;
+}
 /*
 
 /*
@@ -32,7 +37,4 @@ var value;
 
 
 
-function destructivelyDeleteFromObjectByKey(object, key){
-  delete recipes.key;
-  return recipes;
-}*/
+*/
