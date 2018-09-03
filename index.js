@@ -19,7 +19,7 @@ function deleteFromObjectByKey (object, key){
 }
 
 function destructivelyDeleteFromObjectByKey(object, key){
-  delete recipes[prop3];
+  delete recipes.prop;
   return recipes;
 }
 /*
@@ -27,7 +27,7 @@ function destructivelyDeleteFromObjectByKey(object, key){
 /*
 /*var key;
 var value;
-*/
+
 function updateObjectWithKeyAndValue(object, key, value){
    return Object.assign({}, object, { [key]: value });
    //return recipes;
