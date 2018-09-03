@@ -1,9 +1,14 @@
 var recipes = {prop:1};
 
 function updateObjectWithKeyAndValue(object, key, value){
-   
    var newRecipe = Object.assign({}, recipes, {prop2:2});
    return newRecipe;
+  
+}
+
+function deleteFromObjectWithKeyAndValue(object, key, value){
+  var newRecipe2 = Object.assign({}, recipes, {prop3:3});
+  return newRecipe2;
   
 }
 /*var key;
