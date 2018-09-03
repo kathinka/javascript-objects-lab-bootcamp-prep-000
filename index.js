@@ -8,10 +8,15 @@ function updateObjectWithKeyAndValue(object, key, value){
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
+ object[key] = value;
+ return object;
+}
+/*
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
   recipes.prop2 = 2;
   return recipes;
 }
-
+/*
 /*var key;
 var value;
 */
@@ -26,10 +31,7 @@ function deleteFromObjectByKey (object, key){
   delete newRecipes.key;
   return newRecipes;
 }
-function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
- object[key] = value;
- return object;
-}
+
 
 function destructivelyDeleteFromObjectByKey(object, key){
   delete recipes.key;
