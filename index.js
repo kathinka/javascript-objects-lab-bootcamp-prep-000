@@ -11,11 +11,14 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
  object[key] = value;
  return object;
 }
-/*
-function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
-  recipes.prop2 = 2;
-  return recipes;
+
+function deleteFromObjectByKey (object, key){
+  var newRecipes = Object.assign({},recipes);
+  delete newRecipes.key;
+  return newRecipes;
 }
+/*
+
 /*
 /*var key;
 var value;
@@ -26,11 +29,7 @@ var value;
   
   
 }
-function deleteFromObjectByKey (object, key){
-  var newRecipes = Object.assign({},recipes);
-  delete newRecipes.key;
-  return newRecipes;
-}
+
 
 
 function destructivelyDeleteFromObjectByKey(object, key){
